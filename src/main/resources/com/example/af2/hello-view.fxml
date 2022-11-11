@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="362.0" prefWidth="642.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.af2.HashTableController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox prefHeight="30.0" prefWidth="602.0">
+      <children>
+         <TextField />
+          <Button onAction="#onHelloButtonClick" text="Add Item" />
+      </children>
+   </HBox>
+
+    <Label fx:id="welcomeText" />
+</VBox>
