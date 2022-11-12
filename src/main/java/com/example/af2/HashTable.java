@@ -17,4 +17,26 @@ public class HashTable {
         linkedLists[hash].insert(node);
     }
 
+    public static int key(String name) {
+        return Node.hashCode(name);
+    }
+    public static int hash(int key, int linkedListsLength) {
+        return key % linkedListsLength;
+    }
+
+    public Node remove(String name) throws Exception {
+        int key = key(name);
+        int hash = hash(key, linkedLists.length);
+
+        if (linkedLists[hash] == null) {
+            throw new Exception("Node not found");
+        }
+        Node removedNode = linkedLists[hash].remove(name);
+
+        if(removedNode == null) {
+            throw new Exception("Node not found");
+        }
+
+        return removedNode;
+    }
 }

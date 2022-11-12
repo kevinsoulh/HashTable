@@ -3,17 +3,57 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
 
-<VBox alignment="CENTER" prefHeight="362.0" prefWidth="642.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.af2.HashTableController">
+<VBox fx:id="container" alignment="CENTER" prefHeight="562.0" prefWidth="942.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.af2.HashTableController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <HBox prefHeight="30.0" prefWidth="602.0">
+   <VBox spacing="10.0">
       <children>
-         <TextField />
-          <Button onAction="#onHelloButtonClick" text="Add Item" />
+         <HBox alignment="CENTER_LEFT" spacing="20.0">
+            <children>
+               <Label text="Name: " />
+               <TextField fx:id="nameTextField" />
+            </children>
+         </HBox>
+         <HBox spacing="20.0">
+            <children>
+               <Label text="Priority: " />
+                <RadioButton fx:id="priority0RadioButton" mnemonicParsing="false" selected="true" text="0">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="priorityToggleGroup" />
+                    </toggleGroup>
+                </RadioButton>
+                <RadioButton fx:id="priority1RadioButton" mnemonicParsing="false" text="1">
+                    <toggleGroup>
+                        <fx:reference source="priorityToggleGroup" />
+                    </toggleGroup>
+                </RadioButton>
+            </children>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" fillHeight="false" spacing="20.0">
+            <children>
+               <Button onAction="#onAddItemButtonClick" text="Add" />
+               <Button mnemonicParsing="false" onAction="#onRemoveItemButtonClick" text="Remove" />
+               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="50.0" />
+               <Button mnemonicParsing="false" onAction="#onListButtonClick" text="List" />
+            </children>
+         </HBox>
       </children>
-   </HBox>
+   </VBox>
+   <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" VBox.vgrow="ALWAYS">
+     <items>
+         <ScrollPane fx:id="scrollPane" fitToWidth="true" hbarPolicy="NEVER" maxHeight="Infinity" maxWidth="Infinity" vbarPolicy="ALWAYS">
+           <content>
+             <AnchorPane fx:id="display" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+<!--                  <Pane fx:id="display" prefHeight="200.0" VBox.vgrow="ALWAYS" >-->
+<!--                     <children></children>-->
+<!--                  </Pane>-->
+           </content>
+         </ScrollPane>
+         <TextArea fx:id="removedNodesLog" />
+     </items>
+   </SplitPane>
 
-    <Label fx:id="welcomeText" />
 </VBox>

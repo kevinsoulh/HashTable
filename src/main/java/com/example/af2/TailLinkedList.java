@@ -1,9 +1,11 @@
 package com.example.af2;
 
+import java.util.Objects;
+
 public class TailLinkedList {
     int count;
-    private Node localHead;
-    private Node localTail;
+    public Node localHead;
+    public Node localTail;
 
     TailLinkedList nextList;
 
@@ -27,5 +29,40 @@ public class TailLinkedList {
         }
 
         count++;
+    }
+
+    public Node remove(String name) {
+        // Start going through all the nodes with the head node
+        Node currentNode = localHead;
+        for (int i = 0; i < count; i++) {
+
+            if(Objects.equals(currentNode.name, name)) {
+
+                Node currentNodesPreviousNode = currentNode.previousNode;
+                Node currentNodesNextNode = currentNode.nextNode;
+
+                if(currentNodesPreviousNode != null) {
+                    currentNodesPreviousNode.nextNode = currentNodesNextNode;
+                }
+                if(currentNodesNextNode != null) {
+                    currentNodesNextNode.previousNode = currentNodesPreviousNode;
+                }
+
+                if(currentNode == localHead) {
+                    localHead = currentNodesNextNode;
+                }
+                if(currentNode == localTail) {
+                    localTail = currentNodesPreviousNode;
+                }
+
+                count--;
+
+                return currentNode;
+            }
+
+            currentNode = currentNode.nextNode;
+        }
+
+        return null;
     }
 }
