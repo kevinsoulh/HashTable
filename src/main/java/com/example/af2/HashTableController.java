@@ -58,7 +58,7 @@ public class HashTableController {
         String name = nameTextField.getText();
         name = name.trim();
         if(name.length() == 0) {
-            Alert alert = new Alert(Alert.AlertType.ERROR, "You didn't enter a name.", ButtonType.OK);
+            Alert alert = new Alert(Alert.AlertType.ERROR, "Você precisa digitar o nome.", ButtonType.OK);
             alert.show();
             return;
         }
@@ -77,7 +77,7 @@ public class HashTableController {
         name = name.trim();
 
         if(name.length() == 0) {
-            Alert alert = new Alert(Alert.AlertType.ERROR, "You didn't enter a name.", ButtonType.OK);
+            Alert alert = new Alert(Alert.AlertType.ERROR, "Você precisa digitar o nome.", ButtonType.OK);
             alert.show();
             return;
         }
@@ -88,13 +88,13 @@ public class HashTableController {
             int key = HashTable.key(name);
             int hash = HashTable.hash(key, hashTable.linkedLists.length);
 
-            removedNodesLog.appendText("====== Removed node ======" + "\n");
+            removedNodesLog.appendText("====== Nó removido ======" + "\n");
             removedNodesLog.appendText("Name: " + name + "\n");
             removedNodesLog.appendText("Key: " + key + "\n");
             removedNodesLog.appendText("Priority: " + removedNode.priority + "\n");
             removedNodesLog.appendText("Hash: " + hash + "\n\n");
         } catch (Exception e) {
-            Alert alert = new Alert(Alert.AlertType.ERROR, "Sorry, the name does not exist.", ButtonType.OK);
+            Alert alert = new Alert(Alert.AlertType.ERROR, "Desculpe, este nome não existe.", ButtonType.OK);
             alert.show();
         }
     }
@@ -172,7 +172,7 @@ public class HashTableController {
             int priority = currentNode.priority;
             int hash = HashTable.hash(key, hashTable.linkedLists.length);
 
-            String labelString = MessageFormat.format("Name: {0}\nKey: {1}\nPriority: {2}\nHash: {3}", name, key, priority, hash);
+            String labelString = MessageFormat.format("Nome: {0}\nChave: {1}\nPrioridade: {2}\nHash: {3}", name, key, priority, hash);
             Text nodeLabel = new Text(labelString);
             nodeLabel.setX(nodeXPos);
             nodeLabel.setY(currentY + 12);

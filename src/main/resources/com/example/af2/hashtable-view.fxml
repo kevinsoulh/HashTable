@@ -13,13 +13,13 @@
       <children>
          <HBox alignment="CENTER_LEFT" spacing="20.0">
             <children>
-               <Label text="Name: " />
+               <Label text="Nome: " />
                <TextField fx:id="nameTextField" />
             </children>
          </HBox>
          <HBox spacing="20.0">
             <children>
-               <Label text="Priority: " />
+               <Label text="Prioridade: " />
                 <RadioButton fx:id="priority0RadioButton" mnemonicParsing="false" selected="true" text="0">
                     <toggleGroup>
                         <ToggleGroup fx:id="priorityToggleGroup" />
@@ -34,10 +34,10 @@
          </HBox>
          <HBox alignment="CENTER_LEFT" fillHeight="false" spacing="20.0">
             <children>
-               <Button onAction="#onAddItemButtonClick" text="Add" />
-               <Button mnemonicParsing="false" onAction="#onRemoveItemButtonClick" text="Remove" />
+               <Button onAction="#onAddItemButtonClick" text="Inserir" />
+               <Button mnemonicParsing="false" onAction="#onRemoveItemButtonClick" text="Remover" />
                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="50.0" />
-               <Button mnemonicParsing="false" onAction="#onListButtonClick" text="List" />
+               <Button mnemonicParsing="false" onAction="#onListButtonClick" text="Listar" />
             </children>
          </HBox>
       </children>
