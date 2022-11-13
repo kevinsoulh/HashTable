@@ -89,9 +89,9 @@ public class HashTableController {
             int hash = HashTable.hash(key, hashTable.linkedLists.length);
 
             removedNodesLog.appendText("====== Nó removido ======" + "\n");
-            removedNodesLog.appendText("Name: " + name + "\n");
-            removedNodesLog.appendText("Key: " + key + "\n");
-            removedNodesLog.appendText("Priority: " + removedNode.priority + "\n");
+            removedNodesLog.appendText("Nome: " + name + "\n");
+            removedNodesLog.appendText("Chave: " + key + "\n");
+            removedNodesLog.appendText("Prioridade: " + removedNode.priority + "\n");
             removedNodesLog.appendText("Hash: " + hash + "\n\n");
         } catch (Exception e) {
             Alert alert = new Alert(Alert.AlertType.ERROR, "Desculpe, este nome não existe.", ButtonType.OK);

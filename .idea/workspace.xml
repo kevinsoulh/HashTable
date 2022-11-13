@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="302f7486-67dc-43c9-98ae-4e34ad27552e" name="Changes" comment="finish">
+    <list default="true" id="302f7486-67dc-43c9-98ae-4e34ad27552e" name="Changes" comment="translated some stuff">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/af2/HashTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/af2/HashTableController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/af2/hashtable-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/af2/hashtable-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +77,8 @@
       <workItem from="1668194965939" duration="3613000" />
       <workItem from="1668266200762" duration="27293000" />
       <workItem from="1668365921746" duration="45000" />
-      <workItem from="1668367319932" duration="909000" />
+      <workItem from="1668367319932" duration="1081000" />
+      <workItem from="1668375958132" duration="1033000" />
     </task>
     <task id="LOCAL-00001" summary="working HashTable?">
       <created>1668196306029</created>
@@ -108,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668301374888</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="translated some stuff">
+      <created>1668368329352</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668368329352</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,17 +137,7 @@
     <MESSAGE value="working on the UI" />
     <MESSAGE value="fix some bugs and draw stuff" />
     <MESSAGE value="finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/af2/PriorityLinkedList.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="translated some stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="translated some stuff" />
   </component>
 </project>
