@@ -197,12 +197,26 @@ public class HashTableController {
             // Step 3: draw lines from the array to the first Node
             if(currentNode == linkedList.getHead()) {
                 // Renders a line from the array to the first nodes
-                Line line = new Line(arrayXPos, arrayYPos, nodeXPos, nodeYPos);
+                Line line = new Line(arrayXPos + (hashTableArrayWidth / 2), arrayYPos, nodeXPos + (nodeWidth / 2), nodeYPos);
                 display.getChildren().add(line);
             }
 
-            currentY += nodeLabelHeight + nodeSpacingVertical;
+            double nextY = currentY + nodeLabelHeight + nodeSpacingVertical;
+
+            // Step 3: draw lines between the nodes
+            if(currentNode.nextNode != null) {
+                double line1X = nodeXPos + (nodeWidth / 2);
+
+                Line line1 = new Line(line1X - 20, currentY + nodeLabelHeight, line1X - 20, nextY);
+                Line line2 = new Line(line1X + 20, currentY + nodeLabelHeight, line1X + 20, nextY);
+                display.getChildren().add(line1);
+                display.getChildren().add(line2);
+            }
+
+            currentY = nextY;
             currentNode = currentNode.nextNode;
+
+
         }
 
 

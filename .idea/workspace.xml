@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="302f7486-67dc-43c9-98ae-4e34ad27552e" name="Changes" comment="working on the UI">
+    <list default="true" id="302f7486-67dc-43c9-98ae-4e34ad27552e" name="Changes" comment="fix some bugs and draw stuff">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/af2/HashTableApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/af2/HashTableApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/af2/HashTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/af2/HashTableController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/af2/PriorityLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/af2/PriorityLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/af2/TailLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/af2/TailLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/af2/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/af2/hashtable-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1668194964715</updated>
       <workItem from="1668194965939" duration="3613000" />
-      <workItem from="1668266200762" duration="25359000" />
+      <workItem from="1668266200762" duration="27030000" />
     </task>
     <task id="LOCAL-00001" summary="working HashTable?">
       <created>1668196306029</created>
@@ -93,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668293814022</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix some bugs and draw stuff">
+      <created>1668299667004</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668299667004</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,7 +120,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="working HashTable?" />
     <MESSAGE value="working on the UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on the UI" />
+    <MESSAGE value="fix some bugs and draw stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix some bugs and draw stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
