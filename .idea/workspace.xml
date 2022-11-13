@@ -4,20 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="302f7486-67dc-43c9-98ae-4e34ad27552e" name="Changes" comment="working HashTable?">
+    <list default="true" id="302f7486-67dc-43c9-98ae-4e34ad27552e" name="Changes" comment="working on the UI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/af2/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/af2/HashTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/af2/HashTableApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/af2/HashTableApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/af2/HashTableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/af2/HashTableController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/af2/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/af2/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/af2/PriorityLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/af2/PriorityLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/af2/TailLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/af2/TailLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/af2/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/af2/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1668194964715</updated>
       <workItem from="1668194965939" duration="3613000" />
-      <workItem from="1668266200762" duration="19322000" />
+      <workItem from="1668266200762" duration="25359000" />
     </task>
     <task id="LOCAL-00001" summary="working HashTable?">
       <created>1668196306029</created>
@@ -85,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668196306029</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="working on the UI">
+      <created>1668293814022</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668293814022</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +112,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="working HashTable?" />
-    <option name="LAST_COMMIT_MESSAGE" value="working HashTable?" />
+    <MESSAGE value="working on the UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on the UI" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="currentNode.nextNode == null" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/af2/HashTableController.java</url>
+          <line>169</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/af2/PriorityLinkedList.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

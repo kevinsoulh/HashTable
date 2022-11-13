@@ -8,13 +8,25 @@ public class PriorityLinkedList {
 
     public PriorityLinkedList() {
         priority0.nextList = priority1;
+        priority1.previousList = priority0;
+
     }
 
     public void insert(Node node) {
         if(node.priority == 0) {
             priority0.insertTail(node);
+
+//            if(priority1.localHead != null) {
+//                node.nextNode = priority1.localHead;
+//                priority1.localHead.previousNode = node;
+//            }
         } else {
             priority1.insertTail(node);
+
+//            if(priority0.localTail != null) {
+//                node.previousNode = priority0.localTail;
+//                priority0.localTail.nextNode = node;
+//            }
         }
     }
 

@@ -8,11 +8,17 @@ public class TailLinkedList {
     public Node localTail;
 
     TailLinkedList nextList;
+    TailLinkedList previousList;
 
     public void insertTail(Node node) {
         if (count == 0) {
             if(nextList != null && nextList.count > 0)  {
                 node.nextNode = nextList.localHead;
+                node.nextNode.previousNode = node;
+            }
+            if(previousList != null && previousList.count > 0)  {
+                node.previousNode = previousList.localTail;
+                node.previousNode.nextNode = node;
             }
 
             localHead = node;
